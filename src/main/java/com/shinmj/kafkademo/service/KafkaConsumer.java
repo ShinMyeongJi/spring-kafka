@@ -10,8 +10,8 @@ import java.io.IOException;
 @Slf4j
 public class KafkaConsumer {
     @KafkaListener(topics = "exam-topic", groupId = "foo")
-    public void consume(String msg) throws IOException {
-        log.info("Consumed message : %s", msg);
+    public void consume(String message) throws IOException {
+        log.info("Consumed message : {}", message);
     }
 
 }
