@@ -13,5 +13,4 @@ public class KafkaConsumer {
     public void consume(String message) throws IOException {
         log.info("Consumed message : {}", message);
     }
-
 }
